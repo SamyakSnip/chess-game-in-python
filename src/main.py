@@ -14,8 +14,11 @@ class Main:
 
     def mainloop(self):
         
+        game = self.game
+        screen = self.scree
+        
         while True:
-            self.game.show_bg(self.scree)
+            game.show_bg(screen)
             
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
